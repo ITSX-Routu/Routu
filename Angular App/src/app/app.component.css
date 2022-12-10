@@ -1,0 +1,309 @@
+/* Hoja de estilos perteneciente a la ventana principal */
+/* 06/11/2022 */
+
+
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Calligraffitti&display=swap');
+
+
+body{
+    font-family: 'Arvo';
+    margin: -10px;  /* importante saber que el valor del margin es negativo ya que si se deja como 0 los navegadores automaticamente calculan las dimenciones por lo cual muestran una margen en cada uno de los lados (navegadores: Firefox, Chrome y Brave) */
+    overflow-x: hidden; /* ocultar la barra de desplazamiento lateral */
+}
+
+
+/* -------------------------------------------------------------- */
+/* Seccion de la BARRA DE NAVEGACIÓN */
+.header-main{
+    display: flex;
+    height: 100px;
+    background-color: #00000057 ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;   
+}
+
+.logo img{
+    height: 70px;
+    margin-left: 220px;
+}
+
+.header-links{
+    margin-right: 200px;
+}
+
+.header-links a{
+    text-decoration: none;
+    font-weight: 600;
+    padding-right: 35px;
+    color: white;
+}
+
+.header-links a:hover{
+    text-decoration: underline;
+    animation-duration: 3s;
+}  
+
+
+/* -------------------------------------------------------------- */
+
+/* Seccion 1 | Imagen - titulo principal */
+
+.seccion1{
+    height: 827px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+
+    /* AÑADIR IMAGENES */
+
+    background-image: url(/src/assets/img/img-fondo-1.jpg);
+    
+    background-size: cover; 
+    color: #fff;
+}
+/* titulos */
+.seccion1-titulos{
+    position: relative;
+    margin-top: 300px;
+    margin-right: 620px;
+    /* flex-direction: column; */
+    font-family: 'Arvo';
+}
+
+.seccion1-titulos h5{
+    font-size: 2em;
+}
+
+.seccion1 h1{
+    font-size: 5em;
+    position: relative;
+    bottom: 40px;
+}
+
+/* -----------------------------------------------------------   */
+/* Seccion de ACTIVIDAES | Aventuras, Cultura, Relajación */
+.actividades{
+    height: 718px;
+    width: 100%;
+    background-color: #B6B6CA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actividad-titulo{
+    margin-bottom: 480px;
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+    font-size: 2.3em;
+
+}
+
+.actividad{
+    margin-top: 7em;
+    /* position: relative; */
+    top: 40px;
+    margin: 1.5em;
+    width: 353px;
+    height: 458px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    
+    /* margin-right: 50px; */
+}
+
+.actividad-imagen{
+    width: 352px;
+    height: 300px;
+    display: block;
+    /* position: relative; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.actividad-imagen img{
+    width: 352px;
+    height: 300px;
+}
+
+.actividad h3{
+    font-size: 1.6em;
+    color: #5B5D73;
+}
+
+.boton-diseno {
+    background-color: #DDDFF6;
+    color: #5B5D73;
+    border: 1px solid #555555;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    font-family: 'Arvo';
+  }
+  
+.boton-diseno:hover {
+background-color: #555555;
+color: white;
+}
+
+/* -------------------------------------------------------------- */
+
+/* Seccion 2 | Descripcion del lugar */
+
+.seccion-descripcion{
+    width: 100%;
+    height: 718px;
+    background-color: #AEAFCC;
+    display: flex;
+    justify-content: center;
+}
+
+/* contenedo de la informacion */
+.sec-informacion{
+    width: 350px;
+}
+/* imagen de la seccion */
+.imagen-izquierda img{
+    height: 718px;
+    width: 488px;
+}
+.imagen-izquierda{
+    height: 718px;
+    width: 488px;
+}
+
+/* titulo */
+.sec-informacion{
+    margin-top: 5em;
+    margin-left: 9em;
+}
+
+.sec-informacion h1{
+    color: #5B5D73;
+    font-size: 2.5em;
+    
+}
+
+.mas-informacion .boton-diseno{
+    /* position: relative; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+}
+/* -------------------------------------------------------------- */
+
+/* Seccion 3 | Descripcion 2 */
+
+.seccion-descripcion2{
+    width: 100%;
+    height: 718px;
+    background-color: #8C8DAA;
+    display: flex;
+    justify-content: center;
+}
+
+/* contenedo de la informacion */
+.sec-informacion2{
+    width: 350px;
+}
+/* imagen de la seccion */
+.imagen-derecha img{
+    height: 718px;
+    width: 488px;
+}
+.imagen-derecha{
+    height: 718px;
+    width: 488px; 
+}
+
+/* titulo */
+.sec-informacion2{
+    margin-top: 5em;
+    margin-right: 9em; 
+}
+
+.sec-informacion2 h1{
+    color: #5B5D73;
+    font-size: 2.5em;
+    
+}
+
+.mas-informacion2 .boton-diseno{
+    /* position: relative; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em; 
+}
+
+
+/* -------------------------------------------------------------- */
+
+/* Seccion 4 | información de ROUTUR */
+.que-es-Routur{
+    background-color: #9a9ab6; 
+    width: 100%;
+    height: 562px;
+    display: flex;
+    justify-content: center;  
+    color: #fff;
+}
+
+/* logo */
+.logo-routur{
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 3.5em;
+}
+
+.logo-routur img{
+    width: 210px;
+}
+
+/* contenedor de información */
+.quienes-somos{
+    width: 500px;
+    margin-left: 10em;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 3.5em;
+}
+
+/* -------------------------------------------------------------- */
+
+/* Seccion 5 | FOOTER */
+.footer-main{
+    width: 100%;
+    height: 284px;
+    color: #fff;
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contacto */
+.contacto{
+    margin-right: 36em;
+}
+
+
+/* imagen */
+.logo-footer img{
+    width: 80px;
+}
